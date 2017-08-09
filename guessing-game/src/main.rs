@@ -4,10 +4,13 @@ use std::io;
 use rand::Rng;
 use std::cmp::Ordering;
 
+const MIN_NUMBER: u32 = 1;
+const MAX_NUMBER: u32 = 21;
+
 fn main() {
     println!("Guess the number!");
 
-    let secret_number = rand::thread_rng().gen_range(1, 21);
+    let secret_number = rand::thread_rng().gen_range(MIN_NUMBER, MAX_NUMBER);
 
     loop {
         println!("Input your guess:");
