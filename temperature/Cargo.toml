@@ -1,0 +1,6 @@
+[package]
+name = "temperature"
+version = "0.1.0"
+authors = ["Paweł J. Wal <pawel.wal@codesthq.com>"]
+
+[dependencies]
